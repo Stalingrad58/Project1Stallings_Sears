@@ -1,5 +1,6 @@
-#include "Frequency.h"
 #include "stdafx.h"
+#include "Frequency.h"
+
 #include <iostream> 
 #include <string>
 #include <sstream>
