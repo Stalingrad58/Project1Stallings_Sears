@@ -3,21 +3,34 @@
 #include <iostream> 
 #include <string>
 #include <sstream>
+#include <iomanip>
+#include <vector>
 using namespace std;
+
+MonoDigrams::MonoDigrams() {
+
+}
+MonoDigrams::MonoDigrams(string letters, int count, double freq) {
+	MonoOrDi = letters;
+	numberAppearance = count;
+	frequency = freq;
+}
+void MonoDigrams::PrintMonograms(vector<MonoDigrams> monograms) {
+
+}
+
 
 void frequencyAnalysis(string cipher, double length) {
 	int i = 65;
 	int key = 0;
-	int temp = 0;
-	string plaintext = "";
-	double frequency1 = 0;
-	double frequency2 = 0;
-	int whatLetter1 = 0;
-	int whatLetter2 = 0;
+	double IC = 0;
+	vector<MonoDigrams> monograms(26);
 	for (int i = 65; i <= 90; i++) {
-		double characterCount = count(cipher.begin(), cipher.end(), i);
+		int characterCount = count(cipher.begin(), cipher.end(), i);
 		double currentFrequency = characterCount / length;
-		if (currentFrequency > frequency1) {
+		monograms[i] = MonoDigrams(to_string(i), characterCount, currentFrequency);
+	}
+		/*if (currentFrequency > frequency1) {
 			frequency2 = frequency1;
 			frequency1 = currentFrequency;
 			whatLetter2 = whatLetter1;
@@ -29,10 +42,11 @@ void frequencyAnalysis(string cipher, double length) {
 		}
 	}
 	cout << frequency1 << endl;
-	cout << whatLetter1 << endl;
+	cout << char(whatLetter1) << endl;
 	cout << frequency2 << endl;
-	cout << whatLetter2 << endl;
+	cout << char(whatLetter2) << endl;
 	key = whatLetter1 - 69;
 	cout << key << endl;
+	*/
 
 }
