@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "Frequency.h"
-
 #include <iostream> 
 #include <string>
 #include <sstream>
@@ -16,10 +15,21 @@ MonoDigrams::MonoDigrams(string letters, int count, double freq) {
 	numberAppearance = count;
 	frequency = freq;
 }
-void MonoDigrams::PrintMonograms(vector<MonoDigrams> monograms) {
-
+void MonoDigrams::PrintMonograms() {
+	cout << MonoOrDi << "\t\t" << frequency << endl;
+	return;
 }
 
+string MonoDigrams::getLetters() {
+	return MonoOrDi;
+}
+
+int MonoDigrams::getCount() {
+	return numberAppearance;
+}
+double MonoDigrams::getFrequency() {
+	return frequency;
+}
 
 void frequencyAnalysis(string cipher, double length) {
 	int i = 65;
@@ -30,6 +40,8 @@ void frequencyAnalysis(string cipher, double length) {
 		int characterCount = count(cipher.begin(), cipher.end(), i);
 		double currentFrequency = characterCount / length;
 		monograms[i] = MonoDigrams(to_string(i), characterCount, currentFrequency);
+		monograms[i].PrintMonograms();
+
 	}
 		/*if (currentFrequency > frequency1) {
 			frequency2 = frequency1;

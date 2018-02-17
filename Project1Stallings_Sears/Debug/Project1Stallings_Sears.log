@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿  Project1Stallings_Sears.vcxproj -> C:\Users\David\source\repos\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe
+=======
+﻿LINK : fatal error LNK1168: cannot open C:\Users\Jeremy\Documents\ECE471\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe for writing
+>>>>>>> 7a0bdd941d82ad665839478ffccdcb9b13fb197d
