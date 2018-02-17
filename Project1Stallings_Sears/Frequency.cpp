@@ -39,8 +39,8 @@ void frequencyAnalysis(string cipher, double length) {
 	for (int i = 65; i <= 90; i++) {
 		int characterCount = count(cipher.begin(), cipher.end(), i);
 		double currentFrequency = characterCount / length;
-		monograms[i] = MonoDigrams(to_string(i), characterCount, currentFrequency);
-		monograms[i].PrintMonograms();
+//		monograms[i] = MonoDigrams(to_string(i), characterCount, currentFrequency);
+//		monograms[i].PrintMonograms();
 
 	}
 		/*if (currentFrequency > frequency1) {

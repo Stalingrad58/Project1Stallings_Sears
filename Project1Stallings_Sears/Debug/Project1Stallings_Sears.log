@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-﻿  Project1Stallings_Sears.vcxproj -> C:\Users\David\source\repos\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe
-=======
-﻿LINK : fatal error LNK1168: cannot open C:\Users\Jeremy\Documents\ECE471\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe for writing
->>>>>>> 7a0bdd941d82ad665839478ffccdcb9b13fb197d
+﻿  Ciphers.cpp
+c:\users\david\source\repos\project1stallings_sears\project1stallings_sears\ciphers.cpp(20): warning C4018: '<': signed/unsigned mismatch
+  Project1Stallings_Sears.vcxproj -> C:\Users\David\source\repos\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe
