@@ -9,7 +9,7 @@
 using namespace std;
 
 
-class MonoDigrams{
+class MonoDigrams {
 private:
 	string MonoOrDi;
 	int numberAppearance;
@@ -18,7 +18,10 @@ private:
 public:
 	MonoDigrams();
 	MonoDigrams(string letters, int count, double frequency);
-	void PrintMonograms(vector<MonoDigrams> monograms);
+	void PrintMonograms();
+	string getLetters();
+	int getCount();
+	double getFrequency();
 	
 };
 void frequencyAnalysis(string cipher, double length);
