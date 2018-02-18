@@ -17,7 +17,7 @@ private:
 
 public:
 	MonoDigrams();
-	MonoDigrams(string letters, int count, double frequency);
+	void setMono(string letters, int count, double frequency);
 	void PrintMonograms();
 	string getLetters();
 	int getCount();

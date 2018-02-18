@@ -1,1 +1,7 @@
-﻿LINK : fatal error LNK1168: cannot open C:\Users\Jeremy\Documents\ECE471\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe for writing
+﻿  Frequency.cpp
+c:\users\jeremy\documents\ece471\project1stallings_sears\project1stallings_sears\frequency.cpp(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\jeremy\documents\ece471\project1stallings_sears\project1stallings_sears\frequency.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\users\jeremy\documents\ece471\project1stallings_sears\project1stallings_sears\frequency.cpp(131): warning C4018: '<': signed/unsigned mismatch
+c:\users\jeremy\documents\ece471\project1stallings_sears\project1stallings_sears\frequency.cpp(144): warning C4018: '<': signed/unsigned mismatch
+c:\users\jeremy\documents\ece471\project1stallings_sears\project1stallings_sears\frequency.cpp(157): warning C4018: '<': signed/unsigned mismatch
+  Project1Stallings_Sears.vcxproj -> C:\Users\Jeremy\Documents\ECE471\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe
