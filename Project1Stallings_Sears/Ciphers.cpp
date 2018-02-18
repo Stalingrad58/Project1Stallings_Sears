@@ -9,6 +9,8 @@
 using namespace std;
 
 void shiftCipher(MonoDigrams mostFrequent, string cipher) {
+
+	char english = 'A';
 	string letter = mostFrequent.getLetters(); //will identify what the letter is that is most frequent
 	char temp1 = letter[0];
 	int key = temp1 - 69;//letter is converted to its respective ASCII value and is subtracted by the ASCII for E
@@ -23,8 +25,25 @@ void shiftCipher(MonoDigrams mostFrequent, string cipher) {
 		}
 		cout << temp2; //output the corresponding text
 	}
+
+	cout << endl << "Does this look like English to you, kind sir or lady? y/n";
+	
+	while (true) {
+		cin >> english;
+		if (english == 'y') {
+			cout << "This is a shift cipher, decoded with a key of " << key << endl;
+			break;
+		}
+		else if (english == 'n') {
+			break;
+		}
+		else {
+			cout << "Not a valid input" << endl;
+		}
+	}
+
 }
 
 void substitutionCipher() {
-
+	cout << "This is a substitution cipher and must be solved manually" << endl;
 }

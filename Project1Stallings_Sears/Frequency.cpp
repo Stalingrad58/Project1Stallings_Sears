@@ -33,12 +33,10 @@ double MonoDigrams::getFrequency() {
 	return frequency;
 }
 
-void frequencyAnalysis(string cipher, double length) {
+vector<MonoDigrams> monoFrequencyAnalysis(string cipher, double length) {
 	//int i = 65;
 	string ascii;
-	int stop;
 	int key = 0;
-	int counter;
 	double IC = 0;
 	vector<MonoDigrams> monograms;
 	monograms.resize(26);
@@ -47,11 +45,17 @@ void frequencyAnalysis(string cipher, double length) {
 		ascii = i;
 		int characterCount = count(cipher.begin(), cipher.end(), i);
 		double currentFrequency = characterCount / length;
-		monograms[i-65].setMono(ascii, characterCount, currentFrequency);
-		monograms[i-65].PrintMonograms();
+		monograms[i - 65].setMono(ascii, characterCount, currentFrequency);
+		monograms[i - 65].PrintMonograms();
+		IC += currentFrequency * currentFrequency;
 	}
 	cout << endl << endl << endl;
-
+	return monograms;
+}
+	//digrams
+void diFrequencyAnalysis(string cipher, double length) {
+	int stop;
+	int counter;
 	vector<MonoDigrams> digrams;
 	string stringOne, stringTwo;
 
@@ -82,7 +86,7 @@ void frequencyAnalysis(string cipher, double length) {
 			toAdd.setMono(stringOne, counter, (counter / (length - 1)));
 			digrams.push_back(toAdd);
 			//toAdd.PrintMonograms();
-			
+
 		}
 		if (digrams.size() == 0) {
 			for (int x = j; x < (cipher.size() - 1); x++) {
@@ -103,14 +107,14 @@ void frequencyAnalysis(string cipher, double length) {
 		}
 	}
 
-
+}
 
 	//trigrams
 
-
-
+void triFrequencyAnalysis(string cipher, double length){
+	int stop, counter;
 	vector<MonoDigrams> trigrams;
-
+	string stringOne, stringTwo;
 
 	for (int j = 0; j < (cipher.size() - 2); j++) {
 		stringOne = cipher.at(j);
@@ -160,5 +164,12 @@ void frequencyAnalysis(string cipher, double length) {
 		}
 	}
 
+}
 
+double IC(vector<MonoDigrams> monograms) {
+	double IC = 0;
+	for (int i = 0; i < monograms.size(); i++) {
+		IC += monograms[i].getFrequency() * monograms[i].getFrequency();
+	}
+	return IC;
 }

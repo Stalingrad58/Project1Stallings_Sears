@@ -9,4 +9,5 @@
 
 void shiftCipher(MonoDigrams mostFrequent, string cipher); //will attempt to decode cipher using shift cipher
 void substitutionCipher(); //will attempt to decode cipher using substitution cipher
+void vignereCipher(); //will attempt to decode cipher using substitution cipher
 #endif

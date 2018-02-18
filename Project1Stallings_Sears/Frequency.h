@@ -24,6 +24,9 @@ public:
 	double getFrequency();
 	
 };
-void frequencyAnalysis(string cipher, double length);
+vector<MonoDigrams> monoFrequencyAnalysis(string cipher, double length);
+void diFrequencyAnalysis(string cipher, double length);
+void triFrequencyAnalysis(string cipher, double length);
+double IC(vector<MonoDigrams> monograms);
 
 #endif 
