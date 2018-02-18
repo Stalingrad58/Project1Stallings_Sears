@@ -24,7 +24,7 @@
     <ClInclude Include="Frequency.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\Ciphers.h">
+    <ClInclude Include="Ciphers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,7 +38,7 @@
     <ClCompile Include="Frequency.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\Ciphers.cpp">
+    <ClCompile Include="Ciphers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
