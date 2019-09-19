@@ -1,2 +1,6 @@
-﻿  Frequency.cpp
+﻿  main.cpp
+c:\users\david\source\repos\project1stallings_sears\project1stallings_sears\main.cpp(29): warning C4018: '<': signed/unsigned mismatch
+  Ciphers.cpp
+c:\users\david\source\repos\project1stallings_sears\project1stallings_sears\ciphers.cpp(20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Project1Stallings_Sears.vcxproj -> C:\Users\David\source\repos\Project1Stallings_Sears\Debug\Project1Stallings_Sears.exe
